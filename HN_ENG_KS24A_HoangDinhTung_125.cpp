@@ -77,7 +77,7 @@ int main(){
 					for(int i=size-1;i>=deleteIndex;--i){
 						a[i]=a[i+1];
 					}
-					size--;
+					--size;
 				}else{
 					printf("vi tri can xoa khong hop le!!!!\n");
 				}
@@ -150,10 +150,10 @@ int main(){
 				for(int i=0;i<size-1;i++){
 					min=a[i];
 					for(int j=i+1;i<size-1;i++){
-						if(a[j+1]<min){
-							min = a[j+1];
-							a[j+1]=a[j];
-							a[j]=min;
+						if(a[j]<min){
+							min = a[j];
+							a[j]=a[i];
+							a[i]=min;
 						}
 					}
 				}
