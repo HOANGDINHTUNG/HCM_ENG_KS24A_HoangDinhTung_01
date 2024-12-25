@@ -135,6 +135,10 @@ int main(){
 					if(index==1){
 						printf("%d ",a[i]);
 					}
+					else{
+						printf("mang khong co so nguyen to!!!\n");
+						break;
+					}
 				}
 				printf("\n");
 				break;
